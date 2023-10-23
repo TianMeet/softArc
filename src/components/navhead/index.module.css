@@ -1,0 +1,10 @@
+.NavHead {
+    font-size: 40px;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color :#ffe76f;
+    border-radius: 5px;
+}
