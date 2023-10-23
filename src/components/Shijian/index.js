@@ -46,6 +46,14 @@ const Shijian = () => {
                 >
                     关键函数的程序代码
                 </Button>
+                <Button
+                    size='large'
+                    type='primary'
+                    onClick={() => setActiveTab("处理输入文件")}
+                    className={activeTab === "处理输入文件" ? style.active : ""}
+                >
+                    处理输入文件
+                </Button>
             </div>
 
             <div className={style.mid}>
@@ -83,6 +91,15 @@ const Shijian = () => {
                 )}
                 {activeTab === "关键函数的程序代码" && (
                     <div>关键函数的程序代码内容 </div>
+                )}
+                {activeTab === "处理输入文件" && (
+                    <div>
+                        <div>结果如下：</div>
+                        <img
+                            src='https://cdn.jsdelivr.net/gh/TianMeet/blog-img/%E6%88%AA%E5%B1%8F2023-10-23%2019.33.12.png'
+                            alt=''
+                        />{" "}
+                    </div>
                 )}
             </div>
         </div>

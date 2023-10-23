@@ -46,6 +46,14 @@ const Guandao = () => {
                 >
                     关键函数的程序代码
                 </Button>
+                <Button
+                    size='large'
+                    type='primary'
+                    onClick={() => setActiveTab("处理输入文件")}
+                    className={activeTab === "处理输入文件" ? style.active : ""}
+                >
+                    处理输入文件
+                </Button>
             </div>
 
             <div className={style.mid}>
@@ -82,7 +90,7 @@ const Guandao = () => {
                     </div>
                 )}
                 {activeTab === "关键函数的程序代码" && (
-                    <div>关键函数的程序代码内容 </div>
+                    <div>管道-过滤器关键函数的程序代码内容 </div>
                 )}
             </div>
         </div>
